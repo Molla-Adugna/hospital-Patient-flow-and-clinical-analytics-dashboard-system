@@ -60,4 +60,33 @@ Key operational, clinical, and financial measures calculated in the data model i
     Total Billing Amount: $25,272,254.37    
     Average Billing per Encounter: $10,108.90   
 ## 🖥️ Interactive Dashboard Layout 
-The Dashboard tab provides a streamlined executive view driven by synchronized Slicers (Gender, BloodGroup, AgeGroup, and Month):
+The Dashboard tab provides a streamlined executive view driven by synchronized Slicers (Gender, BloodGroup, AgeGroup, and Month):  
+```text
+========================================================================================================
+                                 HOSPITAL PATIENT FLOW & CLINICAL ANALYTICS DASHBOARD
+========================================================================================================
+[ KPI Card: TOTAL ADMISSIONS ]  [ KPI Card: ADMISSIONS YTD ]  [ KPI Card: AVG LENGTH OF STAY ]  [ KPI Card: EMERGENCY SHARE % ]  [ KPI Card: TOTAL BILLING ]
+--------------------------------------------------------------------------------------------------------
+ [ SLICERS ]  │  [ CHART: Chronic Conditions by Age Group ]         │  [ CHART: Top Medications Dispensed ]       │  [ SLICERS ]
+ • Gender     │  • Line chart tracking Arthritis, Cancer,          │  • Bar chart highlighting prescribed       │  • BloodGroup
+ • Month      │    & Hypertension across Age Groups                 │    medications (Aspirin, Paracetamol, etc.) │  • AgeGroup
+--------------│-----------------------------------------------------│---------------------------------------------│-------------
+              │  [ CHART: Admission Type Distribution ]             │  [ CHART: Monthly Admission Type Trend ]    │  [ CHART: Condition by Gender ]
+              │  • Stacked Bar Chart comparing Urgent,              │  • Line trend tracking Elective, Emergency, │  • Stacked Column Chart mapping
+              │    Emergency, & Elective volumes                    │    & Urgent cases month-over-month          │    diagnoses by Female vs Male
+================================================================================================
+```
+## 🚀 Key Features & Highlights
+Dynamic Slicing & Filtering: Instant visual filtering across age, gender, blood group, and time periods.  
+Separation of Layers: Dedicated sheets for Raw Data Connections, Data Model, Pivot Table Calculations (Analysis), and Presentation (Dashboard).
+
+High Performance: Designed using Data Model connections to ensure optimal workbook size and fast calculation speed.
+
+🛠️ How to View & Use the Project
+Clone or download this repository.
+
+Ensure the folder structure is preserved: keep patient_flow_analytics_raw_data in the same directory as Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx.
+
+Open Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx in Microsoft Excel 2016 or newer (with Power Pivot enabled).
+
+Navigate to the Dashboard sheet and use the interactive slicers to explore the analytics.
