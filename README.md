@@ -1,5 +1,14 @@
 # Hospital Patient Flow & Clinical Analytics Dashboard
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Healthcare Analytics](https://img.shields.io/badge/Healthcare_Analytics-0078D4?style=for-the-badge)
+![Data Cleaning](https://img.shields.io/badge/Data_Cleaning-2E8B57?style=for-the-badge)
+![ML Ready](https://img.shields.io/badge/ML_Ready-FF6F00?style=for-the-badge)
 
+---
+![Hospital Patient Flow & Clinical Analytics Dashboard](https://github.com/Molla-Adugna/hospital-Patient-flow-and-clinical-analytics-dashboard-system/blob/main/Assets/Hospital%20Patient%20Flow%20Dashboard%20Thumbnail(1).png?raw=true)
 ## 📌 Project Overview
 The **Hospital Patient Flow & Clinical Analytics Dashboard** is an interactive, end-to-end healthcare analytics solution built using **Microsoft Excel**, **Power Query**, and **Data Model (Power Pivot / DAX)**. 
 
