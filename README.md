@@ -14,6 +14,8 @@ Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard_System/
 │
 ├── Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx   # Main Excel Dashboard Workbook
 │
+│── Assets                                                        # Folder containing Screenshot images and Thumbnail
+│
 └── patient_flow_analytics_raw_data/                              # Folder containing raw datasets
     ├── dim_patients.xlsx                                          # Patient demographic data
     ├── fact_diagnoses.xlsx                                        # Primary & secondary patient diagnoses
