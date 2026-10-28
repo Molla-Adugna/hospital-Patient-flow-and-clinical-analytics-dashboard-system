@@ -1,0 +1,2 @@
+# hospital-Patient-flow-and-clinical-analytics-dashboard-system
+This Project is an interactive, end-to-end healthcare analytics solution built using Microsoft Excel-Power Query, and Data Model (Power Pivot / DAX). It analyzes patient admissions, clinical diagnoses, operational flow, and billing metrics to provide actionable insights into hospital performance, capacity planning, and patient demographics.
