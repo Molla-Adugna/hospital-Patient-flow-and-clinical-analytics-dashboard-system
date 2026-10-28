@@ -78,15 +78,11 @@ The Dashboard tab provides a streamlined executive view driven by synchronized S
 ```
 ## 🚀 Key Features & Highlights
 Dynamic Slicing & Filtering: Instant visual filtering across age, gender, blood group, and time periods.  
-Separation of Layers: Dedicated sheets for Raw Data Connections, Data Model, Pivot Table Calculations (Analysis), and Presentation (Dashboard).
-
+Separation of Layers: Dedicated sheets for Raw Data Connections, Data Model, Pivot Table Calculations (Analysis), and Presentation (Dashboard).  
 High Performance: Designed using Data Model connections to ensure optimal workbook size and fast calculation speed.
 
-🛠️ How to View & Use the Project
-Clone or download this repository.
-
-Ensure the folder structure is preserved: keep patient_flow_analytics_raw_data in the same directory as Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx.
-
-Open Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx in Microsoft Excel 2016 or newer (with Power Pivot enabled).
-
-Navigate to the Dashboard sheet and use the interactive slicers to explore the analytics.
+## 🛠️ How to View & Use the Project
+1. Clone or download this repository.
+2. Ensure the folder structure is preserved: keep patient_flow_analytics_raw_data in the same directory as Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx.
+3. Open Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx in Microsoft Excel 2016 or newer (with Power Pivot enabled).
+4. Navigate to the Dashboard sheet and use the interactive slicers to explore the analytics.
