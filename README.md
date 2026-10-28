@@ -93,10 +93,20 @@ The Dashboard tab provides a streamlined executive view driven by synchronized S
 ## 🚀 Key Features & Highlights
 Dynamic Slicing & Filtering: Instant visual filtering across age, gender, blood group, and time periods.  
 Separation of Layers: Dedicated sheets for Raw Data Connections, Data Model, Pivot Table Calculations (Analysis), and Presentation (Dashboard).  
-High Performance: Designed using Data Model connections to ensure optimal workbook size and fast calculation speed.
+High Performance: Designed using Data Model connections to ensure optimal workbook size and fast calculation speed.  
 
 ## 🛠️ How to View & Use the Project
 1. Clone or download this repository.
 2. Ensure the folder structure is preserved: keep ```patient_flow_analytics_raw_data``` in the same directory as ```Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx.```
 3. Open ```Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx``` in Microsoft Excel 2016 or newer (with Power Pivot enabled).
 4. Navigate to the ```Dashboard``` sheet and use the interactive slicers to explore the analytics.
+
+
+    
+
+## 🌐 Connect With Me
+ 
+[![Portfolio](https://img.shields.io/badge/🌍_Portfolio-Visit_Website-0A66C2?style=for-the-badge)](https://mollaadugna.wixsite.com/molla-adugna-1)
+ 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Molla_Adugna-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/molla-adunga/)
+[![Fiverr](https://img.shields.io/badge/Fiverr-Available_for_Work-1DBF73?style=for-the-badge&logo=fiverr&logoColor=s)](https://www.fiverr.com/molla_adugna?public_mode=true)
