@@ -49,6 +49,7 @@ The Data Model follows a Star Schema / Snowflake Hybrid Architecture centered ar
         fact_encounters [1] ─── [<] fact_medications (Joined on EncounterID)  
         
 ```
+![Data Model & Entity Relationship Diagram](https://github.com/Molla-Adugna/hospital-Patient-flow-and-clinical-analytics-dashboard-system/blob/main/Assets/DataModel.png?raw=true)
 ## 🧮 Data Model Measures (DAX / Excel Data Model)
 Key operational, clinical, and financial measures calculated in the data model include:
 ### 📈 Admission & Flow Metrics
@@ -71,6 +72,8 @@ Key operational, clinical, and financial measures calculated in the data model i
 ## 💰 Financial Metrics
     Total Billing Amount: $25,272,254.37    
     Average Billing per Encounter: $10,108.90   
+
+![Data Model Measures](https://github.com/Molla-Adugna/hospital-Patient-flow-and-clinical-analytics-dashboard-system/blob/main/Assets/Measures.png?raw=true)
 ## 🖥️ Interactive Dashboard Layout 
 The Dashboard tab provides a streamlined executive view driven by synchronized Slicers (Gender, BloodGroup, AgeGroup, and Month):  
 ```text
