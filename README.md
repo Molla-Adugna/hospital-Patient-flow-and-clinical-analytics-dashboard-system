@@ -1,4 +1,4 @@
-# Hospital Patient Flow & Clinical Analytics Dashboard
+# 🏥 Hospital Patient Flow & Clinical Analytics Dashboard
 ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
 ![Power Query](https://img.shields.io/badge/Power_Query-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX_Measures-0176D3?style=for-the-badge&logo=analytics&logoColor=white)
