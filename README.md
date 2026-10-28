@@ -21,21 +21,22 @@ Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard_System/
     └── fact_medications.xlsx                                      # Prescribed medication data
 ```
 ## ⚙️ Data Pipeline & Transformation Workflow
-**1. Data Ingestion:** Raw data files were extracted from the patient_flow_analytics_raw_data folder and imported into Power Query.  
-**2. Dedicated Date Table:** Created a custom DimDate table in Power Query containing complete calendar hierarchies (Date, Year, QuarterNo, Quarter, MonthNo).  
+**1. Data Ingestion:** Raw data files were extracted from the ```patient_flow_analytics_raw_data folder``` and imported into Power Query.  
+**2. Dedicated Date Table:** Created a custom ```DimDate``` table in Power Query containing complete calendar hierarchies (```Date, Year, QuarterNo, Quarter, MonthNo```).  
 **3. ETL & Data Cleaning:** Cleaned, verified data types, standardized column headers, and handled null/missing values.  
 **4. Data Model Loading:** Loaded all transformed queries using "Close & Load To... -> Only Create Connection" and checked "Add this data to the Data Model".
 
 🔗 Data Model & Entity Relationship Diagram (ERD)
 The Data Model follows a Star Schema / Snowflake Hybrid Architecture centered around patient encounters:  
-```text
-dim_patients [1] ─── [<] fact_encounters (Joined on PatientID)
-
-DimDate [1] ─── [<] fact_encounters (Joined on Date → AdmissionDate)
-
-fact_encounters [1] ─── [<] fact_diagnoses (Joined on EncounterID)
-
-fact_encounters [1] ─── [<] fact_medications (Joined on EncounterID)
+```
+        dim_patients [1] ─── [<] fact_encounters (Joined on PatientID)  
+        
+        DimDate [1] ─── [<] fact_encounters (Joined on Date → AdmissionDate)  
+        
+        fact_encounters [1] ─── [<] fact_diagnoses (Joined on EncounterID)  
+        
+        fact_encounters [1] ─── [<] fact_medications (Joined on EncounterID)  
+        
 ```
 ## 🧮 Data Model Measures (DAX / Excel Data Model)
 Key operational, clinical, and financial measures calculated in the data model include:
@@ -83,6 +84,6 @@ High Performance: Designed using Data Model connections to ensure optimal workbo
 
 ## 🛠️ How to View & Use the Project
 1. Clone or download this repository.
-2. Ensure the folder structure is preserved: keep patient_flow_analytics_raw_data in the same directory as Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx.
-3. Open Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx in Microsoft Excel 2016 or newer (with Power Pivot enabled).
-4. Navigate to the Dashboard sheet and use the interactive slicers to explore the analytics.
+2. Ensure the folder structure is preserved: keep ```patient_flow_analytics_raw_data``` in the same directory as ```Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx.```
+3. Open ```Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx``` in Microsoft Excel 2016 or newer (with Power Pivot enabled).
+4. Navigate to the ```Dashboard``` sheet and use the interactive slicers to explore the analytics.
