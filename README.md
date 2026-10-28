@@ -1,2 +1,63 @@
-# hospital-Patient-flow-and-clinical-analytics-dashboard-system
-This Project is an interactive, end-to-end healthcare analytics solution built using Microsoft Excel-Power Query, and Data Model (Power Pivot / DAX). It analyzes patient admissions, clinical diagnoses, operational flow, and billing metrics to provide actionable insights into hospital performance, capacity planning, and patient demographics.
+# Hospital Patient Flow & Clinical Analytics Dashboard
+
+## 📌 Project Overview
+The **Hospital Patient Flow & Clinical Analytics Dashboard** is an interactive, end-to-end healthcare analytics solution built using **Microsoft Excel**, **Power Query**, and **Data Model (Power Pivot / DAX)**. 
+
+This project analyzes patient admissions, clinical diagnoses, operational flow, and billing metrics to provide actionable insights into hospital performance, capacity planning, and patient demographics.
+
+---
+
+## 📁 Repository & Project Structure
+
+```text
+Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard_System/
+│
+├── Hospital_Patient_Flow_And_Clinical_Analytics_Dashboard.xlsx   # Main Excel Dashboard Workbook
+│
+└── patient_flow_analytics_raw_data/                              # Folder containing raw datasets
+    ├── dim_patients.xlsx                                          # Patient demographic data
+    ├── fact_diagnoses.xlsx                                        # Primary & secondary patient diagnoses
+    ├── fact_encounters.xlsx                                       # Admission, discharge, billing, & LOS details
+    └── fact_medications.xlsx                                      # Prescribed medication data
+```
+## ⚙️ Data Pipeline & Transformation Workflow
+**1. Data Ingestion:** Raw data files were extracted from the patient_flow_analytics_raw_data folder and imported into Power Query.  
+**2. Dedicated Date Table:** Created a custom DimDate table in Power Query containing complete calendar hierarchies (Date, Year, QuarterNo, Quarter, MonthNo).  
+**3. ETL & Data Cleaning:** Cleaned, verified data types, standardized column headers, and handled null/missing values.  
+**4. Data Model Loading:** Loaded all transformed queries using "Close & Load To... -> Only Create Connection" and checked "Add this data to the Data Model".
+
+🔗 Data Model & Entity Relationship Diagram (ERD)
+The Data Model follows a Star Schema / Snowflake Hybrid Architecture centered around patient encounters:  
+```text
+dim_patients [1] ─── [<] fact_encounters (Joined on PatientID)
+
+DimDate [1] ─── [<] fact_encounters (Joined on Date → AdmissionDate)
+
+fact_encounters [1] ─── [<] fact_diagnoses (Joined on EncounterID)
+
+fact_encounters [1] ─── [<] fact_medications (Joined on EncounterID)
+```
+## 🧮 Data Model Measures (DAX / Excel Data Model)
+Key operational, clinical, and financial measures calculated in the data model include:
+### 📈 Admission & Flow Metrics
+    Total Admissions / Total Encounters: 2,500  
+    Admissions YTD: 113    
+    Rolling 30-Day Admissions: 6    
+    Unique Patients: 1,062   
+    Patients with Multiple Encounters: 730   
+    Average Length of Stay (ALOS): 14.51 Days   
+### 🏥 Admission Types Breakdown
+    Emergency Encounters: 819 (32.76% Emergency Share)   
+    Elective Encounters: 823   
+    Urgent Encounters: 858    
+### 🩺 Clinical & Medication Metrics
+    Total Diagnoses Recorded: 3,257   
+    Hypertension Count: 535   
+    Cancer Count: 552   
+    Arthritis Count: 516    
+    Total Medications Dispensed: 4,453   
+## 💰 Financial Metrics
+    Total Billing Amount: $25,272,254.37    
+    Average Billing per Encounter: $10,108.90   
+## 🖥️ Interactive Dashboard Layout 
+The Dashboard tab provides a streamlined executive view driven by synchronized Slicers (Gender, BloodGroup, AgeGroup, and Month):
